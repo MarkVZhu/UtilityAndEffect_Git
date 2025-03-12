@@ -1,0 +1,1 @@
+把texturepack下的emoji字体（TMP_Sprite Asset）拖到TMP Settings中的Default Sprite Asset即可
