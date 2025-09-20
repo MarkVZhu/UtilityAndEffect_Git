@@ -337,7 +337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2100656795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 2124852176}
   - component: {fileID: 2124852174}
   - component: {fileID: 2124852177}
+  - component: {fileID: 2124852178}
   m_Layer: 0
   m_Name: RankMgr
   m_TagString: Untagged
@@ -482,6 +483,19 @@ MonoBehaviour:
   isOnlineRank: 1
   serverUrl: http://124.221.195.228/api.php
   rankRange: 50
+--- !u!114 &2124852178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124852173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffab33d7eac39b64bb3981584fcb5be6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameScore: 555
 --- !u!1001 &3875008281551361341
 PrefabInstance:
   m_ObjectHideFlags: 0

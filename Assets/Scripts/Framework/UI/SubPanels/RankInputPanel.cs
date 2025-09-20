@@ -18,7 +18,7 @@ public class RankInputPanel : BasePanel {
 	// Use this for initialization
 	void Start () {
 		//TODO:Score
-		GetControl<TextMeshProUGUI>("ScoreText").text = "Score : " + 1;
+		GetControl<TextMeshProUGUI>("ScoreText").text = "Score : " + SampleGameManager.Instance.gameScore;
 		
 		RankMgr.Instance.updatedPlayerList = new List<PlayerData>();
 		
@@ -73,7 +73,7 @@ public class RankInputPanel : BasePanel {
 				currentPd.playerName = name;
 				currentPd.rankNum = 0;
 				//TODO:Score
-				currentPd.score = 50;//GameManager.Instance.GetScore();
+				currentPd.score = SampleGameManager.Instance.gameScore;//GameManager.Instance.GetScore();
 				//Random.Range(1000,2000); //StaticDataCenter.Instance.currentScore;
 				
 				RankMgr.Instance.updatedPlayerList = RankMgr.Instance.InsertPlayerData(currentPd, RankMgr.Instance.updatedPlayerList);
