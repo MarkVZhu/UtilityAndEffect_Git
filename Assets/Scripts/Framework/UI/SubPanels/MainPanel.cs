@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using MarkFramework;
 
-public class MainPanel : BasePanel {
+public class FMainPanel : BasePanel {
 
 	//public Button btnStart;
 	//public Button btnQuit;

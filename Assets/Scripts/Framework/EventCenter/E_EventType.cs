@@ -30,7 +30,21 @@ namespace MarkFramework
 		/// <summary>
 		/// UI elements' value change
 		/// </summary>
-		E_Raise_Property
+		E_Raise_Property,
+		
+		E_Money_Change,
+		
+		E_Gem_Change,
+		
+		E_ItemCellBeginDrag,
+		
+		E_ItemCellDrag,
+		
+		E_ItemCellEndDrag,
+		
+		E_ItemCellEnter,
+		
+		E_ItemCellExit
 		
 	}
 }

@@ -56,7 +56,7 @@ public class ResultPanel : BasePanel {
 			case "btnMain":
 				Debug.Log("btnMain被点击");
 				UIManager.Instance.HidePanel("ResultPanel");
-				UIManager.Instance.ShowPanel<MainPanel>("MainPanel");
+				UIManager.Instance.ShowPanel<FMainPanel>("MainPanel");
 				break;
 		}
 	}
