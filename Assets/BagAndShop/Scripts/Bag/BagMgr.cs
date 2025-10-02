@@ -18,15 +18,19 @@ public class BagMgr : BaseManager<BagMgr>
     //是否拖动中
     private bool isDraging = false;
 
-
+    private BagMgr()
+    {
+        
+    }
+    
     public void Init()
     {
         //TODO:修改EventCenter
-        // EventCenter.Instance.AddEventListener<ItemCell>("ItemCellBeginDrag", BeginDragItemCell);
-        // EventCenter.Instance.AddEventListener<BaseEventData>("ItemCellDrag", DragItemCell);
-        // EventCenter.Instance.AddEventListener<ItemCell>("ItemCellEndDrag", EndDragItemCell);
-        // EventCenter.Instance.AddEventListener<ItemCell>("ItemCellEnter", EnterItemCell);
-        // EventCenter.Instance.AddEventListener<ItemCell>("ItemCellExit", ExitItemCell);
+        EventCenter.Instance.AddEventListener<ItemCell>(E_EventType.E_ItemCellBeginDrag, BeginDragItemCell);
+        EventCenter.Instance.AddEventListener<BaseEventData>(E_EventType.E_ItemCellDrag, DragItemCell);
+        EventCenter.Instance.AddEventListener<ItemCell>(E_EventType.E_ItemCellEndDrag, EndDragItemCell);
+        EventCenter.Instance.AddEventListener<ItemCell>(E_EventType.E_ItemCellEnter, EnterItemCell);
+        EventCenter.Instance.AddEventListener<ItemCell>(E_EventType.E_ItemCellExit, ExitItemCell);
     }
 
     /// <summary>

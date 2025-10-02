@@ -57,6 +57,7 @@ public class BagMainPanel : BasePanel
     //当货币发生改变时 用来监听 更新的函数
     private void UpdatePanel(int money)
     {
+        Debug.Log("改钱");
         GetControl<Text>("txtMoney").text = GameDataMgr.Instance.playerInfo.money.ToString();
         GetControl<Text>("txtGem").text = GameDataMgr.Instance.playerInfo.gem.ToString();
     }

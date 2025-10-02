@@ -54,9 +54,10 @@ public class ShopCell : BasePanel {
     /// 初始化 商店物品 复合控件的显示信息
     /// </summary>
     /// <param name="info"></param>
-    public void InitInfo( ShopCellInfo info )
+    public void InitInfo(ShopCellInfo info)
     {
         this.info = info;
+        Debug.Log("info" + info.id);
 
         //根据售卖的道具id 得到道具表信息
         Item item = GameDataMgr.Instance.GetItemInfo(info.itemInfo.id);

@@ -12,6 +12,12 @@ public class TipMgr : BaseManager<TipMgr> {
     /// 显示一键提示面板
     /// </summary>
     /// <param name="info"></param>
+    
+    private TipMgr()
+    {
+        
+    }
+    
 	public void ShowOneBtnTip(string info)
     {
         UIManager.Instance.ShowPanel<OneBtnTipPanel>("OneBtnTipPanel", E_UI_Layer.System, (panel) =>

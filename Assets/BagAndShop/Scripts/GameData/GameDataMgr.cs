@@ -19,6 +19,11 @@ public class GameDataMgr : BaseManager<GameDataMgr>
     //玩家信息存储路径
     private static string PlayerInfo_Url = Application.persistentDataPath + "/PlayerInfo.txt";
 
+    private GameDataMgr()
+	{
+			
+	}
+    
     /// <summary>
     /// 初始化数据
     /// </summary>
@@ -29,7 +34,6 @@ public class GameDataMgr : BaseManager<GameDataMgr>
         Debug.Log(PlayerInfo_Url);
         //根据json文件的内容 解析成对应的数据结构 并存储起来
         Items items = JsonUtility.FromJson<Items>(info);
-        Debug.Log(items.info.Count);
         for( int i = 0; i < items.info.Count; ++i )
         {
             itemInfos.Add(items.info[i].id, items.info[i]);
@@ -58,7 +62,7 @@ public class GameDataMgr : BaseManager<GameDataMgr>
 
         //加载Resources文件夹下的json文件 获取它的内容
         string shopInfo = ResMgr.Instance.Load<TextAsset>("Json/ShopInfo").text;
-        Debug.Log(shopInfo);
+        Debug.Log("shopInfo " + shopInfo);
         //根据json文件的内容 解析成对应的数据结构 并存储起来
         Shops shopsInfo = JsonUtility.FromJson<Shops>(shopInfo);
         //记录下 加载解析出来的商店信息

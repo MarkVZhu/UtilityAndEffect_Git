@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MarkFramework;
 using UnityEngine;
 
-public class Main : MonoBehaviour {
+public class ShowUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
