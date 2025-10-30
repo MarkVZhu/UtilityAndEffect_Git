@@ -59,6 +59,10 @@ sysinfo.txt
 # Unity3D version change file
 ProjectVersion.txt
 
+# Packages Json
+manifest.json
+packages-lock.json
+
 # Builds
 *.apk
 *.aab
