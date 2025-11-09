@@ -35,9 +35,9 @@ public class BinaryDataMgr
 		//InitData(); //如果不注释则不需要在代码中Initialize
 	}
 
-	public void InitData()
+	public void InitData<TContainer, TData>()
 	{
-		LoadTable<TowerInfoContainer, TowerInfo>();
+		LoadTable<TContainer, TData>();
 	}
 
 	/// <summary>

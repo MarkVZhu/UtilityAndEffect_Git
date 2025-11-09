@@ -7,8 +7,7 @@ public class TestExcelBinary : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BinaryDataMgr.Instance.InitData();
-
+        BinaryDataMgr.Instance.InitData<TowerInfoContainer, TowerInfo>();
 
         TowerInfoContainer data = BinaryDataMgr.Instance.GetTable<TowerInfoContainer>();
         print(data.dataDic[5].name);
